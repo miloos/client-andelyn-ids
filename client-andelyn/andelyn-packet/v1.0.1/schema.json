@@ -1,0 +1,164 @@
+{
+    "$id": "http://ids.tetrascience.com/private-tetrascience-mloos/andelyn-packet/v1.0.1/schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": ["id"],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "file_name": {
+        "type": "string"
+      },
+      "method": {
+        "type": "string"
+      },
+      "method_version": {
+        "type": "string"
+      },
+      "start_date": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "end_date": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "status": {
+        "type": "string"
+      },
+      "last_updated_by": {
+        "type": "string"
+      },
+      "last_updated_date": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "created_by": {
+        "type": "string"
+      },
+      "created_date": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "samples": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["id", "lot_number"],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "lot_number": {
+              "type": "string"
+            },
+            "specification": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "last_updated_by": {
+              "type": "string"
+            },
+            "last_updated_date": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "serial_number": {
+              "type": "string"
+            },     
+            "requested_by": {
+              "type": "string"
+            },  
+            "requested_by_date": {
+              "type": "string",
+              "format": "date-time"
+            },     
+            "assigned_by": {
+              "type": "string"
+            },  
+            "assigned_by_date": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "project": {
+              "type": "string"
+            },
+            "cd_number": {
+              "type": "string"
+            },
+            "client_name": {
+              "type": "string"
+            },
+            "client_id": {
+              "type": "string"
+            },
+            "serotype": {
+              "type": "string"
+            },
+            "transgene": {
+              "type": "string"
+            },
+            "product_id": {
+              "type": "string"
+            },
+            "product": {
+              "type": "string"
+            },
+            "product_type": {
+              "type": "string"
+            },  
+            "anticipated_manufacture_date": {
+              "type": "string",
+              "format": "date-time"
+            },  
+            "date_of_manufacture": {
+              "type": "string",
+              "format": "date-time"
+            },  
+            "qa_assignee": {
+              "type": "string"
+            },  
+            "number_of_sublots": {
+              "type": "number"
+            },
+            "gmp_or_tox": {
+              "type": "string"
+            },
+            "tevg_pr": {
+              "type": "string"
+            },
+            "barcode": {
+              "type": "string"
+            },
+            "cell_line": {
+              "type": "string"
+            },
+            "production_grade": {
+              "type": "string"
+            },
+            "plasmid_name": {
+              "type": "string"
+            },
+            "plasmid_type": {
+              "type": "string"
+            },
+            "antibiotic_resistance": {
+              "type": "string"
+            },
+            "comments": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "comments": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  }
